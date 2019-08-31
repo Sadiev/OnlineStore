@@ -1,0 +1,11 @@
+C:\Users\dilsh\source\repos\OnlineStore\OnlineStore\OnlineStore.Model\OnlineStore.Model\bin\Debug\netcoreapp2.2\OnlineStore.Model.deps.json
+C:\Users\dilsh\source\repos\OnlineStore\OnlineStore\OnlineStore.Model\OnlineStore.Model\bin\Debug\netcoreapp2.2\OnlineStore.Model.dll
+C:\Users\dilsh\source\repos\OnlineStore\OnlineStore\OnlineStore.Model\OnlineStore.Model\obj\Debug\netcoreapp2.2\OnlineStore.Model.csprojAssemblyReference.cache
+C:\Users\dilsh\source\repos\OnlineStore\OnlineStore\OnlineStore.Model\OnlineStore.Model\obj\Debug\netcoreapp2.2\OnlineStore.Model.csproj.CoreCompileInputs.cache
+C:\Users\dilsh\source\repos\OnlineStore\OnlineStore\OnlineStore.Model\OnlineStore.Model\obj\Debug\netcoreapp2.2\OnlineStore.Model.AssemblyInfoInputs.cache
+C:\Users\dilsh\source\repos\OnlineStore\OnlineStore\OnlineStore.Model\OnlineStore.Model\obj\Debug\netcoreapp2.2\OnlineStore.Model.AssemblyInfo.cs
+C:\Users\dilsh\source\repos\OnlineStore\OnlineStore\OnlineStore.Model\OnlineStore.Model\bin\Debug\netcoreapp2.2\OnlineStore.Model.runtimeconfig.json
+C:\Users\dilsh\source\repos\OnlineStore\OnlineStore\OnlineStore.Model\OnlineStore.Model\bin\Debug\netcoreapp2.2\OnlineStore.Model.runtimeconfig.dev.json
+C:\Users\dilsh\source\repos\OnlineStore\OnlineStore\OnlineStore.Model\OnlineStore.Model\bin\Debug\netcoreapp2.2\OnlineStore.Model.pdb
+C:\Users\dilsh\source\repos\OnlineStore\OnlineStore\OnlineStore.Model\OnlineStore.Model\obj\Debug\netcoreapp2.2\OnlineStore.Model.dll
+C:\Users\dilsh\source\repos\OnlineStore\OnlineStore\OnlineStore.Model\OnlineStore.Model\obj\Debug\netcoreapp2.2\OnlineStore.Model.pdb
