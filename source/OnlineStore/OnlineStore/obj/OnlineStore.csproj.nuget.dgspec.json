@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dilsh\\source\\repos\\OnlineStore\\OnlineStore\\source\\OnlineStore\\OnlineStore\\OnlineStore.csproj": {}
+    "C:\\Users\\dilsh\\source\\repos\\OnlineStore\\source\\OnlineStore\\OnlineStore\\OnlineStore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dilsh\\source\\repos\\OnlineStore\\OnlineStore\\source\\OnlineStore\\OnlineStore\\OnlineStore.csproj": {
+    "C:\\Users\\dilsh\\source\\repos\\OnlineStore\\source\\OnlineStore\\OnlineStore\\OnlineStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dilsh\\source\\repos\\OnlineStore\\OnlineStore\\source\\OnlineStore\\OnlineStore\\OnlineStore.csproj",
+        "projectUniqueName": "C:\\Users\\dilsh\\source\\repos\\OnlineStore\\source\\OnlineStore\\OnlineStore\\OnlineStore.csproj",
         "projectName": "OnlineStore",
-        "projectPath": "C:\\Users\\dilsh\\source\\repos\\OnlineStore\\OnlineStore\\source\\OnlineStore\\OnlineStore\\OnlineStore.csproj",
+        "projectPath": "C:\\Users\\dilsh\\source\\repos\\OnlineStore\\source\\OnlineStore\\OnlineStore\\OnlineStore.csproj",
         "packagesPath": "C:\\Users\\dilsh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dilsh\\source\\repos\\OnlineStore\\OnlineStore\\source\\OnlineStore\\OnlineStore\\obj\\",
+        "outputPath": "C:\\Users\\dilsh\\source\\repos\\OnlineStore\\source\\OnlineStore\\OnlineStore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -59,6 +59,10 @@
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.3, )"
             }
           },
           "imports": [
