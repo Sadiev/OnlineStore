@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dilsh\\source\\repos\\OnlineStore\\OnlineStore\\OnlineStore.Model\\OnlineStore.Model\\OnlineStore.Model.csproj": {}
+    "C:\\Users\\dilsh\\source\\repos\\OnlineStore\\source\\OnlineStore.Model\\OnlineStore.Model\\OnlineStore.Model.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dilsh\\source\\repos\\OnlineStore\\OnlineStore\\OnlineStore.Model\\OnlineStore.Model\\OnlineStore.Model.csproj": {
+    "C:\\Users\\dilsh\\source\\repos\\OnlineStore\\source\\OnlineStore.Model\\OnlineStore.Model\\OnlineStore.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dilsh\\source\\repos\\OnlineStore\\OnlineStore\\OnlineStore.Model\\OnlineStore.Model\\OnlineStore.Model.csproj",
+        "projectUniqueName": "C:\\Users\\dilsh\\source\\repos\\OnlineStore\\source\\OnlineStore.Model\\OnlineStore.Model\\OnlineStore.Model.csproj",
         "projectName": "OnlineStore.Model",
-        "projectPath": "C:\\Users\\dilsh\\source\\repos\\OnlineStore\\OnlineStore\\OnlineStore.Model\\OnlineStore.Model\\OnlineStore.Model.csproj",
+        "projectPath": "C:\\Users\\dilsh\\source\\repos\\OnlineStore\\source\\OnlineStore.Model\\OnlineStore.Model\\OnlineStore.Model.csproj",
         "packagesPath": "C:\\Users\\dilsh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dilsh\\source\\repos\\OnlineStore\\OnlineStore\\OnlineStore.Model\\OnlineStore.Model\\obj\\",
+        "outputPath": "C:\\Users\\dilsh\\source\\repos\\OnlineStore\\source\\OnlineStore.Model\\OnlineStore.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
