@@ -23,8 +23,13 @@ using Ecommerce.Models;
 
 #line default
 #line hidden
+#line 3 "C:\Users\dilsh\source\repos\OnlineStore\source\Ecommerce\Ecommerce\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6cfe5dc3050136a642daad5e81c155e6a073ebc9", @"/Views/Cart/Checkout.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6bbcd7c65731fc074a835809e73fcf2cf9014c29", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"660573620e9b1b6ecd8bca426a40847c498bed03", @"/Views/_ViewImports.cshtml")]
     public class Views_Cart_Checkout : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("card p-2"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -107,7 +112,7 @@ using Ecommerce.Models;
             WriteLiteral("/span>\r\n                        <strong>$20</strong>\r\n                    </li>\r\n                </ul>\r\n\r\n                ");
             EndContext();
             BeginContext(2216, 397, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6cfe5dc3050136a642daad5e81c155e6a073ebc97415", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6cfe5dc3050136a642daad5e81c155e6a073ebc97588", async() => {
                 BeginContext(2239, 367, true);
                 WriteLiteral(@"
                     <div class=""input-group"">
@@ -137,7 +142,7 @@ using Ecommerce.Models;
             WriteLiteral("\r\n            </div>\r\n            <div class=\"col-md-8 order-md-1\">\r\n                <h4 class=\"mb-3\">Billing address</h4>\r\n                ");
             EndContext();
             BeginContext(2753, 8345, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6cfe5dc3050136a642daad5e81c155e6a073ebc99478", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6cfe5dc3050136a642daad5e81c155e6a073ebc99651", async() => {
                 BeginContext(2798, 3062, true);
                 WriteLiteral(@"
                     <div class=""row"">
@@ -200,7 +205,7 @@ using Ecommerce.Models;
                                 ");
                 EndContext();
                 BeginContext(5860, 35, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6cfe5dc3050136a642daad5e81c155e6a073ebc913115", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6cfe5dc3050136a642daad5e81c155e6a073ebc913288", async() => {
                     BeginContext(5877, 9, true);
                     WriteLiteral("Choose...");
                     EndContext();
@@ -222,7 +227,7 @@ using Ecommerce.Models;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(5929, 30, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6cfe5dc3050136a642daad5e81c155e6a073ebc914616", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6cfe5dc3050136a642daad5e81c155e6a073ebc914789", async() => {
                     BeginContext(5937, 13, true);
                     WriteLiteral("United States");
                     EndContext();
@@ -251,7 +256,7 @@ using Ecommerce.Models;
                                 ");
                 EndContext();
                 BeginContext(6436, 35, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6cfe5dc3050136a642daad5e81c155e6a073ebc916368", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6cfe5dc3050136a642daad5e81c155e6a073ebc916541", async() => {
                     BeginContext(6453, 9, true);
                     WriteLiteral("Choose...");
                     EndContext();
@@ -273,7 +278,7 @@ using Ecommerce.Models;
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(6505, 27, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6cfe5dc3050136a642daad5e81c155e6a073ebc917869", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6cfe5dc3050136a642daad5e81c155e6a073ebc918042", async() => {
                     BeginContext(6513, 10, true);
                     WriteLiteral("California");
                     EndContext();

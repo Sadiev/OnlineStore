@@ -23,8 +23,13 @@ using Ecommerce.Models;
 
 #line default
 #line hidden
+#line 3 "C:\Users\dilsh\source\repos\OnlineStore\source\Ecommerce\Ecommerce\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"df6f4d620c168abc7e3de87cdaa2b977b650ce60", @"/Views/Cart/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6bbcd7c65731fc074a835809e73fcf2cf9014c29", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"660573620e9b1b6ecd8bca426a40847c498bed03", @"/Views/_ViewImports.cshtml")]
     public class Views_Cart_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998
