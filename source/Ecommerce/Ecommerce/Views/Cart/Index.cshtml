@@ -7,7 +7,7 @@
     <div class="card-header bg-dark text-light">
         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
         Shipping cart
-        <a href="" class="btn btn-outline-info btn-sm pull-right">Continiu shopping</a>
+        <a class="btn btn-outline-info btn-sm pull-right" asp-area="" asp-controller="Home" asp-action="Index">Continiu shopping</a>
         <div class="clearfix"></div>
     </div>
     <div class="card-body">
@@ -78,9 +78,9 @@
     </div>
     <div class="card-footer">
         <div class="pull-right" style="margin: 10px">
-            <a href="" class="btn btn-success pull-right">Checkout</a>
+            <a class="btn btn-success pull-right" asp-area="" asp-controller="Cart" asp-action="Checkout">Checkout</a>
             <div class="pull-right" style="margin: 5px">
-                Total price: <b>50.00€</b>
+                Total price: <b>50.00$</b>
             </div>
         </div>
     </div>

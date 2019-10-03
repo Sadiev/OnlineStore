@@ -12,7 +12,7 @@ namespace Ecommerce.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
-            Database.EnsureCreated();
+            //Database.EnsureCreated();
         }
         public DbSet<ShopingCart> ShopingCarts { get; set; }
         public DbSet<Order> Orders { get; set; }

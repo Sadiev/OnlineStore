@@ -13,6 +13,7 @@ using Microsoft.EntityFrameworkCore;
 using Ecommerce.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Ecommerce.Models;
 
 namespace Ecommerce
 {
@@ -46,6 +47,7 @@ namespace Ecommerce
                     .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -55,6 +57,7 @@ namespace Ecommerce
             {
                 app.UseDeveloperExceptionPage();
                 app.UseDatabaseErrorPage();
+                //SeedData.EnsurePopulated(app);
             }
             else
             {
@@ -72,9 +75,14 @@ namespace Ecommerce
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
+                    name: "pagination",
+                    template: "Products/Page{productPage}",
+                    defaults: new { Controller = "Products", action = "Index" });
+                routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+           
         }
     }
 }

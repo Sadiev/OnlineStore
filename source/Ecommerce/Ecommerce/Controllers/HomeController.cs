@@ -5,14 +5,22 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Ecommerce.Models;
+using Ecommerce.Data;
 
 namespace Ecommerce.Controllers
 {
     public class HomeController : Controller
     {
+        ApplicationDbContext db;
+
+        public HomeController(ApplicationDbContext db)
+        {
+            this.db = db;
+        }
+
         public IActionResult Index()
         {
-            return View();
+            return View(db.Products.Take(6));
         }
 
         public IActionResult Privacy()

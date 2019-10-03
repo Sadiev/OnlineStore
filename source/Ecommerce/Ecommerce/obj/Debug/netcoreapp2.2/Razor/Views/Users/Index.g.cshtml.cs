@@ -28,8 +28,13 @@ using Microsoft.AspNetCore.Identity;
 
 #line default
 #line hidden
+#line 4 "C:\Users\dilsh\source\repos\OnlineStore\source\Ecommerce\Ecommerce\Views\_ViewImports.cshtml"
+using Ecommerce.Data;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1c75600642a462371a771e0bd37528411905a0b8", @"/Views/Users/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"660573620e9b1b6ecd8bca426a40847c498bed03", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"033bf375ebe3e19cfd24f277460b9831403ec40c", @"/Views/_ViewImports.cshtml")]
     public class Views_Users_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<IdentityUser>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("btn btn-sm btn-secondary"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -75,7 +80,7 @@ using Microsoft.AspNetCore.Identity;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(73, 68, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1c75600642a462371a771e0bd37528411905a0b86685", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1c75600642a462371a771e0bd37528411905a0b86843", async() => {
                 BeginContext(129, 8, true);
                 WriteLiteral("Add used");
                 EndContext();
@@ -98,7 +103,7 @@ using Microsoft.AspNetCore.Identity;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(143, 64, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1c75600642a462371a771e0bd37528411905a0b88139", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1c75600642a462371a771e0bd37528411905a0b88297", async() => {
                 BeginContext(198, 5, true);
                 WriteLiteral("Roles");
                 EndContext();
@@ -150,12 +155,12 @@ using Microsoft.AspNetCore.Identity;
             WriteLiteral("</td>\r\n    <td>\r\n        ");
             EndContext();
             BeginContext(409, 493, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1c75600642a462371a771e0bd37528411905a0b810677", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1c75600642a462371a771e0bd37528411905a0b810835", async() => {
                 BeginContext(473, 14, true);
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(487, 84, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1c75600642a462371a771e0bd37528411905a0b811072", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1c75600642a462371a771e0bd37528411905a0b811230", async() => {
                     BeginContext(563, 4, true);
                     WriteLiteral("Edit");
                     EndContext();
@@ -191,7 +196,7 @@ using Microsoft.AspNetCore.Identity;
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(585, 105, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1c75600642a462371a771e0bd37528411905a0b813656", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1c75600642a462371a771e0bd37528411905a0b813814", async() => {
                     BeginContext(671, 15, true);
                     WriteLiteral("Change password");
                     EndContext();
@@ -227,7 +232,7 @@ using Microsoft.AspNetCore.Identity;
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(704, 92, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1c75600642a462371a771e0bd37528411905a0b816261", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1c75600642a462371a771e0bd37528411905a0b816419", async() => {
                     BeginContext(788, 4, true);
                     WriteLiteral("Role");
                     EndContext();
