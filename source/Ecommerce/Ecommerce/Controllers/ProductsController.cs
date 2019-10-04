@@ -23,17 +23,23 @@ namespace Ecommerce.Controllers
         //}
 
         //Adding Pagination
-        public ViewResult Index(int productPage = 1)
+        public ViewResult Index(int category, int productPage = 1)
             => View(new ProductsListViewModel {
                 Products = db.Products
+                .Where(p => category == 0 || p.CategoryID == category)
                 .OrderBy(p => p.ProductID)
                 .Skip((productPage - 1) * PageSize)
                 .Take(PageSize),
                 PagingInfo = new PagingInfoViewModel {
                     CurrentPage = productPage,
                     ItemsPerPage = PageSize,
-                    TotalItems = db.Products.Count()
-                }
+                    TotalItems = category == 0 ?
+                    db.Products.Count() :
+                    db.Products.Where(e =>
+                    e.CategoryID == category).Count()
+                    //TotalItems = db.Products.Count()
+                },
+                CurrentCategory = category
             });
 
         public IActionResult Details(int id)

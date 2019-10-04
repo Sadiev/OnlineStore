@@ -10,5 +10,6 @@ namespace Ecommerce.Models
     {
         public IEnumerable<Product> Products { get; set; }
         public PagingInfoViewModel PagingInfo { get; set; }
+        public int CurrentCategory { get; set; }
     }
 }

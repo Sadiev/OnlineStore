@@ -74,3 +74,5 @@ C:\Users\dilsh\source\repos\OnlineStore\source\Ecommerce\Ecommerce\obj\Debug\net
 C:\Users\dilsh\source\repos\OnlineStore\source\Ecommerce\Ecommerce\obj\Debug\netcoreapp2.2\Razor\Views\Users\Roles.g.cshtml.cs
 C:\Users\dilsh\source\repos\OnlineStore\source\Ecommerce\Ecommerce\obj\Debug\netcoreapp2.2\Razor\Views\Users\CreateRole.g.cshtml.cs
 C:\Users\dilsh\source\repos\OnlineStore\source\Ecommerce\Ecommerce\obj\Debug\netcoreapp2.2\Razor\Views\Users\EditRole.g.cshtml.cs
+C:\Users\dilsh\source\repos\OnlineStore\source\Ecommerce\Ecommerce\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\NavigationMenu\Default.g.cshtml.cs
+C:\Users\dilsh\source\repos\OnlineStore\source\Ecommerce\Ecommerce\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LayoutCategory.g.cshtml.cs

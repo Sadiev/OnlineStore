@@ -74,13 +74,38 @@ namespace Ecommerce
 
             app.UseMvc(routes =>
             {
-                routes.MapRoute(
-                    name: "pagination",
-                    template: "Products/Page{productPage}",
-                    defaults: new { Controller = "Products", action = "Index" });
+                //routes.MapRoute(
+                //    name: "pagination",
+                //    template: "Products/Page{productPage}",
+                //    defaults: new { Controller = "Products", action = "Index" });
+
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
+
+                routes.MapRoute(
+                    name: null,
+                    template: "{category}/Page{productPage:int}",
+                    defaults: new { controller = "Products", action = "Index" });
+
+                routes.MapRoute(
+                    name: null, 
+                    template: "Page{productPage:int}", 
+                    defaults: new { controller = "Products", action = "Index", productPage = 1 });
+
+                routes.MapRoute(
+                    name: null,
+                    template: "{category}",
+                    defaults: new { controller = "Products", action = "Index", productPage = 1 });
+
+                //routes.MapRoute(
+                //    name: null,
+                //    template: "",
+                //    defaults: new { controller = "Products", action = "Index", productPage = 1 });
+
+                //routes.MapRoute(
+                //    name: null,
+                //    template: "{controller}/{action}/{id?}");
             });
            
         }
