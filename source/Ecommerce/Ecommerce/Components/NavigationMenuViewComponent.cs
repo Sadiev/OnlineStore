@@ -18,8 +18,8 @@ namespace Ecommerce.Components
         
         public IViewComponentResult Invoke()
         {
-           // string controller = RouteData.Values["category"].ToString();
-            ViewBag.SelectedCategory = RouteData?.Values["category"];
+            // string controller = RouteData.Values["category"].ToString();
+            ViewBag.SelectedCategory = Request.Query["category"];
             return View(repository.Categories
                 //.Select(x => x.CategoryName)
                 .Distinct()

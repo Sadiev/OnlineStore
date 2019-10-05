@@ -24,7 +24,16 @@
                                         <p class="card-text">@item.Description</p>
                                     </div>
                                     <div class="card-footer">
-                                        <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                                        <form id="@item.ProductID" asp-action="AddToCart"             
+                                              asp-controller="Cart" method="post">
+                                            <input type="hidden" name="id" asp-for="@item.ProductID" />
+                                            <input type="hidden" name="returnUrl"                
+                                                   value="@ViewContext.HttpContext.Request.PathAndQuery()" />
+                                            <small class="text-muted">
+                                                &#9733; &#9733; &#9733; &#9733; &#9734;
+                                                <button type="submit" class="btn btn-primary btn-sm pull-right">Add To Cart</button>
+                                            </small>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
