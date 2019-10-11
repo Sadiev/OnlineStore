@@ -1,0 +1,12 @@
+﻿@model CartViewModel
+
+    <a class="nav-link text-dark" asp-controller="Cart" asp-action="Index" asp-route-returnurl="@ViewContext.HttpContext.Request.PathAndQuery()">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart
+        @if (Model.Lines.Count() > 0)
+        {
+            @Model.Lines.Sum(x => x.Quantity) <span> item(s)</span>
+        }
+</a>
+
+
+

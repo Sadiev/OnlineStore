@@ -16,7 +16,7 @@
             <!-- PRODUCT -->
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-2 text-center">
-                    <img class="img-responsive" src="http://placehold.it/120x80" alt="prewiew" width="120" height="80">
+                    <img class="img-responsive" src="~/img/700x400/@(line.Product.ProductID).jpg" alt="prewiew" width="120" height="80">
                 </div>
                 <div class="col-12 text-sm-center col-sm-12 text-md-left col-md-6">
                     <h4 class="product-name"><strong>@line.Product.ProductName</strong></h4>
@@ -29,17 +29,19 @@
                         <h6><strong>@line.Product.Price.ToString("c")</strong></h6>
                     </div>
                     <div class="col-4 col-sm-4 col-md-4">
-                        <div class="quantity">
-                            <input type="button" value="+" class="plus">
-                            <input type="number" step="1" max="99" min="1" value="1" title="Qty" class="qty"
-                                   size="4">
-                            <input type="button" value="-" class="minus">
+                        <div class="quantity">                  
+                            <input type="number" step="1" max="99" min="1" value="1" title="Qty"  class="qty" size="4">                          
                         </div>
                     </div>
                     <div class="col-2 col-sm-2 col-md-2 text-right">
-                        <button type="button" class="btn btn-outline-danger btn-xs">
-                            <i class="fa fa-trash" aria-hidden="true"></i>
-                        </button>
+                        <form asp-action="RemoveFromCart" method="post">
+                            <input type="hidden" name="ProductID" value="@line.Product.ProductID" />
+                            <input type="hidden" name="returnUrl" value="@Model.ReturnUrl" />
+                            <button type="submit" class="btn btn-outline-danger btn-xs">
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                            </button>
+                        </form>
+                        
                     </div>
                 </div>
             </div>
@@ -49,7 +51,7 @@
         </div>
     <div class="card-footer">
         <div class="pull-right" style="margin: 10px">
-            <a class="btn btn-success pull-right" asp-area="" asp-controller="Cart" asp-action="Checkout">Checkout</a>
+            <a class="btn btn-success pull-right" asp-controller="Cart" asp-action="Checkout">Checkout</a>
             <div class="pull-right" style="margin: 5px">
                 Total price: <b>@Model.Cart.ComputeTotalValue().ToString("c")</b>
             </div>

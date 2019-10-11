@@ -12,9 +12,11 @@ namespace Ecommerce.Controllers
     public class CartController : Controller
     {
         ApplicationDbContext repository;
-        public CartController(ApplicationDbContext repo)
+        private CartViewModel cart;
+        public CartController(ApplicationDbContext repo, CartViewModel cartService)
         {
             repository = repo;
+            cart = cartService;
         }
         public ViewResult Index(string returnUrl)
         {
@@ -23,10 +25,7 @@ namespace Ecommerce.Controllers
                 ReturnUrl = returnUrl
             });
         }
-        public IActionResult Checkout()
-        {
-            return View();
-        }
+        public ViewResult Checkout() => View(new Order());
 
         public RedirectToActionResult AddToCart(int id, string returnUrl)
         {
@@ -66,5 +65,6 @@ namespace Ecommerce.Controllers
         {
             HttpContext.Session.SetJson("Cart", cart);
         }
+
     }
 }
