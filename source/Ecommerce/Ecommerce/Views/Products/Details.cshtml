@@ -1,62 +1,37 @@
 ﻿@model Product
 @{
     ViewData["Title"] = "Details";
+    Layout = "_LayoutCategory";
 }
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="#">Start Bootstrap</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">
-                        Home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
 <!-- Page Content -->
-<div class="container">
-
-    <div class="row">
-
-        <div class="col-lg-3">
-            <h1 class="my-4">Shop Name</h1>
-            <div class="list-group">
-                <a href="#" class="list-group-item active">Category 1</a>
-                <a href="#" class="list-group-item">Category 2</a>
-                <a href="#" class="list-group-item">Category 3</a>
-            </div>
-        </div>
-        <!-- /.col-lg-3 -->
 
         <div class="col-lg-9">
 
             <div class="card mt-4">
-                <img class="card-img-top img-fluid" src="http://placehold.it/900x400" alt="">
+                <img class="card-img-top img-fluid" src="~/img/700x400/@(Model.ProductID).jpg" alt="@Model.ProductName" />
+
                 <div class="card-body">
                     <h3 class="card-title">@Model.ProductName</h3>
                     <h4>@Model.Price</h4>
                     <p class="card-text">@Model.Description</p>
-                    <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
-                    4.0 stars
+                   
+
+
+
+
+                    <form id="@Model.ProductID" asp-action="AddToCart"             
+                          asp-controller="Cart" method="post">
+                        <input type="hidden" name="id" asp-for="@Model.ProductID" />
+                        <input type="hidden" name="returnUrl"                
+                               value="@ViewContext.HttpContext.Request.PathAndQuery()" />
+                        <small class="text-muted">
+                            &#9733; &#9733; &#9733; &#9733; &#9734;
+                            <button type="submit" class="btn btn-primary btn-sm pull-right">Add To Cart</button>
+                        </small>
+                    </form>
+
+
                 </div>
             </div>
             <!-- /.card -->
@@ -81,9 +56,5 @@
             <!-- /.card -->
 
         </div>
-        <!-- /.col-lg-9 -->
 
-    </div>
-
-</div>
 <!-- /.container -->
