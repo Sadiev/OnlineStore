@@ -24,67 +24,91 @@ namespace Ecommerce.Data
                     {
                         return;   // DB has been seeded
                     }
+
+                context.Categories.AddRange(
+                new Category
+                {
+                    CategoryName = "Sport"
+                },
+                new Category
+                {
+                    CategoryName = "Electronics"
+                },
+                new Category
+                {
+                    CategoryName = "Books"
+                },
+                new Category
+                {
+                    CategoryName = "Toys"
+                },
+                new Category
+                {
+                    CategoryName = "Home Garden"
+                }
+                );
+                context.SaveChanges();
                 context.Products.AddRange(
                     new Product
                     {
-                        ProductName = "Kayak",
-                        Description = "A boat for one person",
+                        ProductName = "Item1",
+                        Description = "This is an online stylish text generator.",
                         CategoryID = 1,
                         Price = 275
                     },
                     new Product
                     {
-                        ProductName = "Lifejacket",
-                        Description = "Protective and fashionable",
+                        ProductName = "Item2",
+                        Description = "This is an online stylish text generator.",
                         CategoryID = 1,
                         Price = 48.95m
                     },
                     new Product
                     {
-                        ProductName = "Soccer Ball",
-                        Description = "FIFA-approved size and weight",
+                        ProductName = "Item3",
+                        Description = "This is an online stylish text generator.",
                         CategoryID = 2,
                         Price = 19.50m
                     },
                     new Product
                     {
-                        ProductName = "Corner Flags",
-                        Description = "Give your playing field a professional touch",
+                        ProductName = "Item4",
+                        Description = "This is an online stylish text generator.",
                         CategoryID = 2,
                         Price = 34.95m
                     },
                     new Product
                     {
-                        ProductName = "Stadium",
-                        Description = "Flat-packed 35,000-seat stadium",
+                        ProductName = "Item5",
+                        Description = "This is an online stylish text generator.",
                         CategoryID = 2,
                         Price = 79500
                     },
                     new Product
                     {
-                        ProductName = "Thinking Cap",
-                        Description = "Improve brain efficiency by 75%",
+                        ProductName = "Item6",
+                        Description = "This is an online stylish text generator.",
                         CategoryID = 3,
                         Price = 16
                     },
                     new Product
                     {
-                        ProductName = "Unsteady Chair",
-                        Description = "Secretly give your opponent a disadvantage",
+                        ProductName = "Item7",
+                        Description = "This is an online stylish text generator.",
                         CategoryID = 3,
                         Price = 29.95m
                     },
                     new Product
                     {
-                        ProductName = "Human Chess Board",
-                        Description = "A fun game for the family",
+                        ProductName = "Item8",
+                        Description = "This is an online stylish text generator.",
                         CategoryID = 3,
                         Price = 75
                     },
                     new Product
                     {
-                        ProductName = "Bling-Bling King",
-                        Description = "Gold-plated, diamond-studded King",
+                        ProductName = "Item9",
+                        Description = "This is an online stylish text generator.",
                         CategoryID = 3,
                         Price = 1200
                     }

@@ -10,11 +10,16 @@ namespace Ecommerce.Models
     public class OrderViewModel
     {
         [BindNever]
-        public int OrderID { get; set; }
+        public CartViewModel Cart { get; set; }
         [BindNever]
-        public ICollection<CartLine> Lines { get; set; }
-        [Required(ErrorMessage = "Please enter a name")] 
-        public string Name { get; set; }
+        public int OrderID { get; set; }
+        //[BindNever]
+        //public ICollection<CartLine> Lines { get; set; }
+        
+        [Required(ErrorMessage = "Please enter a first name")] 
+        public string FirstName { get; set; }
+        [Required(ErrorMessage = "Please enter a last name")]
+        public string LastName { get; set; }
         [Required(ErrorMessage = "Please enter the first address line")] 
         public string Line1 { get; set; }
         public string Line2 { get; set; }

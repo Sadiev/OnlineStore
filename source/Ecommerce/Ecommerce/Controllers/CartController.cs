@@ -25,7 +25,42 @@ namespace Ecommerce.Controllers
                 ReturnUrl = returnUrl
             });
         }
-        public ViewResult Checkout() => View(new Order());
+        public ViewResult Checkout() => View(new OrderViewModel {Cart=GetCart()});
+
+        [HttpPost] 
+        public IActionResult Checkout(OrderViewModel order) 
+        { 
+            if (cart.Lines.Count() == 0) 
+            { 
+                ModelState.AddModelError("", "Sorry, your cart is empty!");
+            } 
+            if (ModelState.IsValid) 
+            {
+                //order.Cart.Lines = cart.Lines.ToArray(); 
+                //repository.SaveOrder(order);
+                foreach (var item in cart.Lines)
+                {
+                    repository.Orders.Add(new Order
+                    {
+                        OrderDate = DateTime.Now,
+                        ShipAddress = order.Line1,
+                        ProductID = item.Product.ProductID
+                    });
+                }
+                repository.SaveChanges();
+                cart.Clear();
+                return RedirectToAction("Index", "Home");
+            } 
+            else 
+            { 
+                return View(new OrderViewModel { Cart = GetCart()}); 
+            } 
+        }
+        //public ViewResult Completed() 
+        //{ 
+        //    cart.Clear(); 
+        //    return View();
+        //}
 
         public RedirectToActionResult AddToCart(int id, string returnUrl)
         {

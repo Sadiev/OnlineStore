@@ -63,7 +63,7 @@ namespace Ecommerce
             {
                 app.UseDeveloperExceptionPage();
                 app.UseDatabaseErrorPage();
-                //SeedData.EnsurePopulated(app);
+                //SeedData.Initialize(app);
             }
             else
             {
