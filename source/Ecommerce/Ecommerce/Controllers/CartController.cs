@@ -48,19 +48,19 @@ namespace Ecommerce.Controllers
                     });
                 }
                 repository.SaveChanges();
-                cart.Clear();
-                return RedirectToAction("Index", "Home");
+                //cart.Clear();
+                return RedirectToAction("Completed");
             } 
             else 
             { 
                 return View(new OrderViewModel { Cart = GetCart()}); 
             } 
         }
-        //public ViewResult Completed() 
-        //{ 
-        //    cart.Clear(); 
-        //    return View();
-        //}
+        public ViewResult Completed()
+        {
+            cart.Clear();
+            return View();
+        }
 
         public RedirectToActionResult AddToCart(int id, string returnUrl)
         {
