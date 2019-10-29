@@ -45,12 +45,6 @@
                                 @await Component.InvokeAsync("CartSummary")
                          
                         </li>
-                        @if (User.Identity.IsAuthenticated && User.IsInRole("admin"))
-                        {
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Users" asp-action="Index">Users</a>
-                            </li>
-                        }
                     </ul>
 
                 </div>

@@ -1,6 +1,7 @@
 ﻿@model Ecommerce.Models.EditUserViewModel
 @{
     ViewBag.Title = "Edit user";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 <form asp-action="Edit" asp-controller="Users">
     <div asp-validation-summary="All" class="text-danger"></div>

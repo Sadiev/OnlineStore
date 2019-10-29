@@ -1,6 +1,7 @@
 ﻿@model Ecommerce.Models.CreateUserViewModel
 @{
     ViewBag.Title = "Add a new user";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 <form asp-action="Create" asp-controller="Users">
     <div asp-validation-summary="All" class="text-danger"></div>

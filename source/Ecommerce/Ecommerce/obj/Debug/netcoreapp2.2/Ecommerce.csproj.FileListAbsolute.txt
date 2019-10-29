@@ -80,3 +80,7 @@ C:\Users\dilsh\source\repos\OnlineStore\source\Ecommerce\Ecommerce\obj\Debug\net
 C:\Users\dilsh\source\repos\OnlineStore\source\Ecommerce\Ecommerce\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.cshtml.g.cs
 C:\Users\dilsh\source\repos\OnlineStore\source\Ecommerce\Ecommerce\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\CartSummary\Default.cshtml.g.cs
 C:\Users\dilsh\source\repos\OnlineStore\source\Ecommerce\Ecommerce\obj\Debug\netcoreapp2.2\Razor\Views\Cart\Completed.cshtml.g.cs
+C:\Users\dilsh\source\repos\OnlineStore\source\Ecommerce\Ecommerce\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LayoutAdmin.cshtml.g.cs
+C:\Users\dilsh\source\repos\OnlineStore\source\Ecommerce\Ecommerce\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Index.cshtml.g.cs
+C:\Users\dilsh\source\repos\OnlineStore\source\Ecommerce\Ecommerce\obj\Debug\netcoreapp2.2\Razor\Views\Orders\Index.cshtml.g.cs
+C:\Users\dilsh\source\repos\OnlineStore\source\Ecommerce\Ecommerce\obj\Debug\netcoreapp2.2\Razor\Views\Items\Index.cshtml.g.cs

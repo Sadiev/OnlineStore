@@ -1,5 +1,7 @@
 ﻿@model IEnumerable<Microsoft.AspNetCore.Identity.IdentityRole>
-
+@{ 
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
 <h2>Roles</h2>
 <a class="btn btn-sm btn-secondary" asp-action="CreateRole">Add Role</a>
 <a class="btn btn-sm btn-secondary" asp-action="Index">Users</a>
