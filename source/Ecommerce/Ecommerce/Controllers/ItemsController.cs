@@ -30,23 +30,34 @@ namespace Ecommerce.Controllers
         // GET: Items/Create
         public ActionResult Create()
         {
+            //var cats = db.Categories.Select(s => new Category { CategoryID = s.CategoryID, CategoryName = s.CategoryName}).ToList();
+            ViewBag.Categories= db.Categories;
             return View();
         }
 
         // POST: Items/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(Product model)
         {
+            ViewBag.Categories = db.Categories;
             try
             {
-                // TODO: Add insert logic here
+                //Project project = new Project { ProjectName = model.ProjectName, StartDate = model.StartDate, DueDate = model.DueDate, TotalTime = DateTime.Now, ClientID = model.ClientID, ProjectManagerID = 1 };
+                db.Products.Add(new Product
+                {
+                    ProductName = model.ProductName,
+                    Price = model.Price,
+                    Description = model.Description,
+                    CategoryID = model.CategoryID
+                });
+                db.SaveChanges();
 
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index");
             }
             catch
             {
-                return View();
+                return View(model);
             }
         }
 
